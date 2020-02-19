@@ -15,6 +15,7 @@ body{
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently  supported by Chrome, Opera and Firefox */  
+  font-family: 'Turret Road';
 }
 .nav{
   background-color: #010015;
@@ -109,7 +110,7 @@ body{
     border-bottom-color: #fe25ab;
   }
   .roboto{
-    font-family: 'Turret Road';font-size: xx-large;
+    font-family: 'Turret Road';font-size: x-large;
   }
 
   #stack{
@@ -131,12 +132,21 @@ body{
 
 
   #about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 88.5vh;
+    display: table;
+    height: 73vh;
     text-align: center;
     margin: 1.5em;
+    padding-top: 8em;
   }
   
+  .about-href{
+    color: #fe25ab;
+    text-decoration:none;
+  }
+  .projects-section{
+    height: 73vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(11, 11, 23);
+  }
