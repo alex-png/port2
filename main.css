@@ -1,0 +1,51 @@
+body{
+margin: 0;
+}
+.page{
+background-color: aqua;
+min-height: 100vh;
+}
+#landing-page{
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#landing-img{
+max-height: 25em;
+}
+p{
+margin: 0;
+}
+#nav{
+    background-color: purple;
+    position: fixed;
+    z-index: 10;
+    height: 6vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.hamburger{
+    cursor: pointer;
+    margin: 2%;
+}
+.hamburger-line{
+    width: 12vw;
+    height: 1vh;
+    background-color: black;
+    margin: 5% 0;
+}
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background: black;
+    margin: 0;
+    padding: 0;
+    
+}
+
