@@ -43,9 +43,10 @@ margin: 0;
     height: 100%;
     width: 0;
     position: fixed;
-    background: black;
-    margin: 0;
+    background: red;
+    margin-top: 6vh;
     padding: 0;
+    transition: 0.2s;
     
 }
 
