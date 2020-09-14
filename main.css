@@ -13,7 +13,7 @@ justify-content: center;
 align-items: center;
 }
 #landing-img{
-max-height: 25em;
+max-height: 65vh;
 }
 p{
 margin: 0;
@@ -50,3 +50,15 @@ margin: 0;
     
 }
 
+.blinking{
+    animation:blinkingText 1.3s infinite;
+    font-weight: 900;
+    font-size: xx-large;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}

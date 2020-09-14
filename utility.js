@@ -16,14 +16,6 @@ function dynamicElementText(domElement, arr){
     function timer(ms){
         return new Promise(res => setTimeout(res, ms));
     }
-
-    async function typingAnimated(){
-        for(let i = 0; i < currentElement.length; i++){
-           innerText += currentElement[i];
-           domElement.innerText = innerText;
-           await timer(110);
-        }
-    }
     async function backspaceAnimated(){
         for(let i = innerText.length; i > 0; i--){
             let textArr = innerText.split('');
@@ -33,12 +25,21 @@ function dynamicElementText(domElement, arr){
             await timer(100);
         }
     }
-    
-    typingAnimated();
-    setTimeout(function(){
-        backspaceAnimated();
-    }, currentElement.length * 220);
+
+    async function typingAnimated(){
+        for(let i = 0; i < currentElement.length; i++){
+           innerText += currentElement[i];
+           domElement.innerText = innerText;
+           await timer(110);
+        }
+        setTimeout(function(){
+            backspaceAnimated();
+        }, currentElement.length * 220);
+        await timer(7000);
+        typingAnimated();
+    }
 
 
+        typingAnimated();
 }
 
