@@ -9,12 +9,36 @@ function extendOrCollapseWidth(isToggled, sideNavBar){
 }
 
 function dynamicElementText(domElement, arr){
-    let innerText = '';
-    for(let i = 0; i < arr.length; i++){
-        for(let n = 0; n < arr[i].length; n++){
-            //wait 1 second, then execute something
-            
+    innerText = '';
+    let index = 0;
+    let currentElement = arr[index];
+
+    function timer(ms){
+        return new Promise(res => setTimeout(res, ms));
+    }
+
+    async function typingAnimated(){
+        for(let i = 0; i < currentElement.length; i++){
+           innerText += currentElement[i];
+           domElement.innerText = innerText;
+           await timer(110);
         }
     }
-  domElement.innerText = innerText;
+    async function backspaceAnimated(){
+        for(let i = innerText.length; i > 0; i--){
+            let textArr = innerText.split('');
+            textArr.pop();
+            innerText = textArr.join('');
+            domElement.innerText = innerText;
+            await timer(100);
+        }
+    }
+    
+    typingAnimated();
+    setTimeout(function(){
+        backspaceAnimated();
+    }, currentElement.length * 220);
+
+
 }
+
