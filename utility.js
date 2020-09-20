@@ -7,39 +7,43 @@ function extendOrCollapseWidth(isToggled, sideNavBar){
         sideNavBar.style.padding = '0';
     }
 }
+function timer(ms){
+    return new Promise(res => setTimeout(res, ms));
+}
 
-function dynamicElementText(domElement, arr){
+function animatedText(domElement, arr){
     innerText = '';
     let index = 0;
     let currentElement = arr[index];
-
-    function timer(ms){
-        return new Promise(res => setTimeout(res, ms));
-    }
     async function backspaceAnimated(){
         for(let i = innerText.length; i > 0; i--){
             let textArr = innerText.split('');
             textArr.pop();
             innerText = textArr.join('');
             domElement.innerText = innerText;
-            await timer(100);
+            await timer(105);
         }
     }
 
     async function typingAnimated(){
         for(let i = 0; i < currentElement.length; i++){
-           innerText += currentElement[i];
-           domElement.innerText = innerText;
-           await timer(110);
+           innerText += currentElement[i]; //current element is the str of arr, so currentElement[i] is a char.
+           domElement.innerText = innerText; //changing dom
+           await timer(100); //by waiting 100ms we give the impression that these are key strokes.
+
         }
-        setTimeout(function(){
-            backspaceAnimated();
-        }, currentElement.length * 220);
-        await timer(7000);
-        typingAnimated();
+       await timer(700);//give users half a second to read before beginning to backspace.
+        backspaceAnimated();
+        if(index === arr.length -1){
+            index = 0;
+        }else{
+            index++;
+        }
+        currentElement = arr[index];
+        let msPerChar = currentElement.length * 210; //this formula is for indicating the length it takes to type out a word. its slightly off; you can test this by inputing a long word in the array.
+        await timer(msPerChar); //below will never happen until the word has been typed out/function is resolved.
+        typingAnimated(); //recursive loop, will never end! i wonder what thi will do to performance tho...
     }
-
-
         typingAnimated();
 }
 

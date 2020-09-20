@@ -1,16 +1,20 @@
 body{
 margin: 0;
+font-family: monospace;
 }
 .page{
 background-color: aqua;
 min-height: 100vh;
 }
 #landing-page{
+background-color: rgb(38 35 51);
+color: blanchedalmond;
 overflow: hidden;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+font-size: xx-large;
 }
 #landing-img{
 max-height: 65vh;
@@ -19,46 +23,49 @@ p{
 margin: 0;
 }
 #nav{
-    background-color: purple;
-    position: fixed;
-    z-index: 10;
-    height: 6vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+background-color: rgb(38 35 51);
+position: fixed;
+z-index: 10;
+height: 6vh;
+width: 100%;
+overflow: hidden;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
 }
 .hamburger{
-    cursor: pointer;
-    margin: 2%;
+cursor: pointer;
+margin: 2%;
 }
 .hamburger-line{
-    width: 12vw;
-    height: 1vh;
-    background-color: black;
-    margin: 5% 0;
+width: 12vw;
+height: 1vh;
+background-color: black;
+margin: 5% 0;
 }
 .sidenav{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    background: red;
-    margin-top: 6vh;
-    padding: 0;
-    transition: 0.2s;
-    
+height: 100%;
+width: 0;
+position: fixed;
+background: red;
+margin-top: 6vh;
+padding: 0;
+transition: 0.2s;
+
 }
 
 .blinking{
-    animation:blinkingText 1.3s infinite;
-    font-weight: 900;
-    font-size: xx-large;
+animation:blinkingText 1.0s infinite;
+font-weight: 900;
+font-size: xx-large;
 }
 @keyframes blinkingText{
-    0%{     color: #000;    }
-    49%{    color: #000; }
-    60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: #000;    }
+0%{     color: blanchedalmond;    }
+49%{    color: blanchedalmond; }
+60%{    color: transparent; }
+99%{    color:transparent;  }
+100%{   color: blanchedalmond;    }
 }
+
+
+  
