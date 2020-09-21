@@ -51,3 +51,7 @@ function animatedText(domElement, arr){
         typingAnimated();
 }
 
+function openTab(){
+
+    
+}

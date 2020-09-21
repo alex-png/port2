@@ -3,6 +3,7 @@ const sideNavBar = document.getElementById("sideNavBar");
 const roleText = document.getElementById("dynamic-role"); //changing role following "i am a..."
 let sideNavBarOpen = false;
 let clickedSection = "";
+let modal = document.getElementById("myModal");
 const roles = ["developer", "freelancer", "problem solver"];
 
 animatedText(roleText, roles);
@@ -19,13 +20,14 @@ sideNavBar.addEventListener("click", function () {
       clickedSection = event.target;
       clickedSection.style.background = "steelblue";
       sideNavBarOpen = !sideNavBarOpen; //
+      modal.style.display = "block";
       extendOrCollapseWidth(sideNavBarOpen, sideNavBar);
     } else {
       clickedSection = event.target;
       clickedSection.style.background = "steelblue";
       sideNavBarOpen = !sideNavBarOpen; //
+      modal.style.display = "block";
       extendOrCollapseWidth(sideNavBarOpen, sideNavBar);
     }
   }
 });
-//////am i being committed?
