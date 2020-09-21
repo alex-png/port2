@@ -15,7 +15,7 @@ sideNavBar.addEventListener('click', function(){
     let clickedSection = event.target;
     
     if(clickedSection.id === "home"){
-        clickedSection.
+        
     }else if(clickedSection.id === "about"){
 
     }else if(clickedSection.id === "portfolio"){
@@ -24,3 +24,4 @@ sideNavBar.addEventListener('click', function(){
 
     }
 });
+//////am i being committed?
