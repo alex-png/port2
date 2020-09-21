@@ -1,68 +1,71 @@
-body{
-margin: 0;
-font-family: monospace;
+body {
+  margin: 0;
+  font-family: monospace;
 }
-.page{
-background-color: aqua;
-min-height: 100vh;
+.page {
+  background-color: aqua;
+  min-height: 100vh;
 }
-#landing-page{
-background-color: rgb(38 35 51);
-color: blanchedalmond;
-overflow: hidden;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-size: xx-large;
+#landing-page {
+  background-color: rgb(38 35 51);
+  color: blanchedalmond;
+  overflow: hidden;
+  font-size: xx-large;
 }
-#landing-img{
-max-height: 65vh;
+#landing-img {
+  max-height: 60vh;
 }
-p{
-margin: 0;
+p {
+  margin: 0;
 }
-#nav{
-background-color: rgb(38 35 51);
-position: fixed;
-z-index: 2;
-height: 6vh;
-width: 100%;
-overflow: hidden;
-display: flex;
-flex-direction: row-reverse;
-align-items: center;
+#nav {
+  background-color: none;
+  position: fixed;
+  z-index: 2;
+  height: 6vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
-.hamburger{
-cursor: pointer;
+.hamburger {
+  cursor: pointer;
 }
-.sidenav{
-height: 100%;
-width: 0;
-position: fixed;
-background: #45bdc3;
-padding: 0;
-transition: 0.1s;
-z-index: 3;
-overflow: hidden;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  background: #45bdc3;
+  padding: 0;
+  transition: 0.1s;
+  z-index: 3;
+  overflow: hidden;
 }
 
-.sideNavBar-section{
-    background-color: none;    
+.sideNavBar-section {
+  background-color: none;
 }
 
-.blinking{
-animation:blinkingText 1.0s infinite;
-font-weight: 900;
-font-size: xx-large;
+.blinking {
+  animation: blinkingText 1s infinite;
+  font-weight: 900;
+  font-size: xx-large;
 }
-@keyframes blinkingText{
-0%{     color: blanchedalmond;    }
-49%{    color: blanchedalmond; }
-60%{    color: transparent; }
-99%{    color:transparent;  }
-100%{   color: blanchedalmond;    }
+@keyframes blinkingText {
+  0% {
+    color: blanchedalmond;
+  }
+  49% {
+    color: blanchedalmond;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: blanchedalmond;
+  }
 }
-
-
-  
