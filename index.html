@@ -11,24 +11,34 @@
     <body>
         <nav id="nav">
             <div id="burger" class="hamburger">
+                <img src="./public/circled-menu.png" style="height: -webkit-fill-available;" />
             </div>
         </nav>
         <div id="sideNavBar" class="sidenav">
-            <img src="public/home.svg" onclick="console.log('Hey')"/>
+            <div id="home" class="sideNavBar-section">
+                <!-- <img id="home" src="public/home.svg"/> -->
+                Home
+            </div>
+            <div id="about" class="sideNavBar-section">
+                <!-- <img id="home" src="public/home.svg"/> -->
+                about
+            </div>
+            <div id="portfolio" class="sideNavBar-section">
+                <!-- <img id="home" src="public/home.svg"/> -->
+                portfolio
+            </div>
+            <div id="contact" class="sideNavBar-section">
+                <!-- <img id="home" src="public/home.svg"/> -->
+                contact
+            </div>
         </div>
+        
         <div id="landing-page" class="page">
             <p>Hello! My name is</p> <p><span id="full-name">Alex Rodriguez</span></p>
             <img id="landing-img" src="public\avatar.svg">
             <p>I am a...<span id="dynamic-role"></span> <span class="blinking">|</span>  </p>
 
         </div>
-        <div class="page" style="background-color: red;">
-        </div> 
-        <div class="page">
-        </div>
-        <div class="page" style="background-color: red;">
-        </div> 
-      
     </body>
     <script src="./utility.js" defer></script>
     <script src="./index.js" defer></script> 

@@ -11,3 +11,16 @@ burger.addEventListener('click', function(){
     extendOrCollapseWidth(sideNavBarOpen, sideNavBar);
 });
 
+sideNavBar.addEventListener('click', function(){
+    let clickedSection = event.target;
+    
+    if(clickedSection.id === "home"){
+        clickedSection.
+    }else if(clickedSection.id === "about"){
+
+    }else if(clickedSection.id === "portfolio"){
+        
+    }else if(clickedSection.id === "contact"){
+
+    }
+});

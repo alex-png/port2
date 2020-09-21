@@ -25,7 +25,7 @@ margin: 0;
 #nav{
 background-color: rgb(38 35 51);
 position: fixed;
-z-index: 10;
+z-index: 2;
 height: 6vh;
 width: 100%;
 overflow: hidden;
@@ -35,23 +35,20 @@ align-items: center;
 }
 .hamburger{
 cursor: pointer;
-margin: 2%;
-}
-.hamburger-line{
-width: 12vw;
-height: 1vh;
-background-color: black;
-margin: 5% 0;
 }
 .sidenav{
 height: 100%;
 width: 0;
 position: fixed;
-background: red;
-margin-top: 6vh;
+background: #45bdc3;
 padding: 0;
-transition: 0.2s;
+transition: 0.1s;
+z-index: 3;
+overflow: hidden;
+}
 
+.sideNavBar-section{
+    background-color: none;    
 }
 
 .blinking{
