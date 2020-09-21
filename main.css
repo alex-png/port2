@@ -38,13 +38,14 @@ p {
   position: fixed;
   background: #45bdc3;
   padding: 0;
-  transition: 0.1s;
+  transition: 0.4s;
   z-index: 3;
   overflow: hidden;
 }
 
 .sideNavBar-section {
   background-color: none;
+  min-height: 4vh;
 }
 
 .blinking {

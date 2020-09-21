@@ -18,9 +18,13 @@ sideNavBar.addEventListener("click", function () {
       clickedSection.style.background = "";
       clickedSection = event.target;
       clickedSection.style.background = "steelblue";
+      sideNavBarOpen = !sideNavBarOpen; //
+      extendOrCollapseWidth(sideNavBarOpen, sideNavBar);
     } else {
       clickedSection = event.target;
       clickedSection.style.background = "steelblue";
+      sideNavBarOpen = !sideNavBarOpen; //
+      extendOrCollapseWidth(sideNavBarOpen, sideNavBar);
     }
   }
 });
