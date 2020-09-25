@@ -1,14 +1,9 @@
 function extendOrCollapseWidth(isToggled, sideNavBar){
     if(isToggled){
-        sideNavBar.style.borderRight = "solid";
-        sideNavBar.style.borderColor = "steelblue";
-        sideNavBar.style.width = '6vh';
+        sideNavBar.style.width = '8vh';
         
     }else{
-        sideNavBar.style.borderRight = "";
-        sideNavBar.style.borderColor = "";
-        sideNavBar.style.width = '0';
-        
+        sideNavBar.style.width = '0';        
     }
 }
 function timer(ms){
@@ -51,7 +46,9 @@ function animatedText(domElement, arr){
         typingAnimated();
 }
 
-function openTab(){
-
-    
+function switchOnModal(modal){
+    modal.style.display = 'block';
+}
+function switchOffModal(modal){
+    modal.style.display = 'none';
 }
