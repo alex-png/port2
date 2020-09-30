@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
@@ -18,30 +19,35 @@
       </div>
     </nav>
     <div id="sideNavBar" class="sidenav">
-      <div id="home" class="sideNavBar-section">
-        <!-- <img id="home" src="public/home.svg"/> -->
-        Home
-      </div>
-      <div id="about" class="sideNavBar-section">
-        <!-- <img id="home" src="public/home.svg"/> -->
-        about
-      </div>
-      <div id="portfolio" class="sideNavBar-section">
-        <!-- <img id="home" src="public/home.svg"/> -->
-        portfolio
-      </div>
-      <div id="contact" class="sideNavBar-section">
-        <!-- <img id="home" src="public/home.svg"/> -->
-        contact
-      </div>
-    </div>
+      <a href="#landing-page">
+        <div id="home" class="sideNavBar-section">
+          <!-- <img id="home" src="public/home.svg"/> -->
+          Home
+        </div>
+      </a>
 
-    <div class='page' id ='about-page'>
-      Hey!
+      <a href="#about-page">
+        <div id="about" class="sideNavBar-section">
+          <!-- <img id="home" src="public/home.svg"/> -->
+          about
+        </div>
+      </a>
+      <a href="#portfolio-page">
+        <div id="portfolio" class="sideNavBar-section">
+          <!-- <img id="home" src="public/home.svg"/> -->
+          portfolio
+        </div>
+      </a>
+      <a href="#contact-page">
+        <div id="contact" class="sideNavBar-section">
+          <!-- <img id="home" src="public/home.svg"/> -->
+          contact
+        </div>
+      </a>
     </div>
 
     <div id="landing-page">
-      <p style="text-align: center; margin-top: 33%">
+      <p style="text-align: center" class="body-p">
         Hello! My name is Alex Rodriguez
       </p>
       <img id="landing-img" src="public\avatar.svg" />
@@ -51,10 +57,66 @@
       </p>
     </div>
 
+    <div class="page" id="about-page">
+      <p class="body-p">
+        Hello, World! I am a creative full-stack engineer passionate about
+        developing practical and efficient applications.
+      </p>
+      <div class="portfolio">
+        <div class="portfolio-item">
+          <img
+            src="./public/SFU_CRT_BDG_Pltfrm_Dev_I_RGB.jpg"
+            class="portfolio-img"
+          />
+        </div>
+
+        <div class="portfolio-item">
+          <img src="./public/SFU_CRT_BDG_Admin_RGB.jpg" class="portfolio-img" />
+        </div>
+
+        <div class="portfolio-item">
+          <img src="./public/js-logo.png" class="portfolio-img" />
+        </div>
+
+        <div class="portfolio-item">
+          <img src="./public/react_logo.png" class="portfolio-img" />
+        </div>
+
+        <div class="portfolio-item">
+          <img src="./public/ruby.png" class="portfolio-img" />
+        </div>
+
+        <div class="portfolio-item">
+          <img
+            src="./public/Ruby_On_Rails_Logo.svg.png"
+            class="portfolio-img"
+          />
+        </div>
+
+        <div class="portfolio-item">
+          <img src="./public/html5.png" class="portfolio-img" />
+        </div>
+
+        <div class="portfolio-item">
+          <img src="./public/css3.png" class="portfolio-img" />
+        </div>
+
+        <div class="portfolio-item">
+          <img src="./public/photoshop.png" class="portfolio-img" />
+        </div>
+      </div>
+      <p>I am 2x Salesforce certified and proficient in Apex, Visualforce, Aura, SOQL, SOSL, Javascript, React.js, Ruby, Ruby on Rails, CSS, HTML and Adobe Photoshop.</p>
+    </div>
+
+    <div class="page" id="portfolio-page">
+      <p class="body-p">This is my portfolio page.</p>
+    </div>
+
+    <div class="page" id="contact-page">
+      <p class="body-p">This is my contact page.</p>
+    </div>
 
     <div id="myModal" class="modal"></div>
-
-
   </body>
   <script src="./utility.js" defer></script>
   <script src="./index.js" defer></script>

@@ -24,27 +24,13 @@ sideNavBar.addEventListener("click", function () {
       clickedSection.style.background = "steelblue";
       sideNavBarOpen = !sideNavBarOpen; //
       extendOrCollapseWidth(sideNavBarOpen, sideNavBar);
-      switchOnModal(modal);
+      
     } else {
       clickedSection = target;
       clickedSection.style.background = "steelblue";
       sideNavBarOpen = !sideNavBarOpen; //
       extendOrCollapseWidth(sideNavBarOpen, sideNavBar);
-      switchOnModal(modal);
-    }
-
-    if(target.id === "home"){
-      switchOffModal(modal);
-    }else if(target.id === 'about'){
-      let about = document.getElementById('about-page');
-      about.style.display = "block";
-      about.style.minHeight = '100vh';
-      about.style.minWidth = '100vw';
-      about.style.opacity = '100%';
-    }else if(target.id === 'portfolio'){
       
-    }else if(target.id === 'contact'){
     }
-
   }
 });

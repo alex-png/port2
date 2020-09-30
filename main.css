@@ -4,29 +4,28 @@ nav: 3
 sideNav: 4
 
 */
-
+html{
+  scroll-behavior: smooth;                          
+}
   
 body {
   margin: 0;
   font-family: monospace;
-  overflow: hidden;
+  background: rgb(38 35 51);
+  text-align: center;
+  /* font-family: 'Turret Road'; */
+
 }
 .page {
   background-color: rgb(38 35 51);
   color: blanchedalmond;
-  overflow: hidden;
-  font-size: xx-large;
-  min-height: 0;
-  min-width: 0;
-  opacity: 0;
-  z-index: 2;
-  transition: 5s;
-  display: none;
-  position: absolute;
+  font-size: x-large;
+  min-height: 100vh;
+  margin: 1em;
 }
-p {
-    margin: 0;
-  }
+.body-p{
+  padding-top:6.5vh;
+}
 
   .modal {
     display: none; /* Hidden by default */
@@ -73,7 +72,7 @@ p {
   overflow: hidden;
   font-size: xx-large;
   min-height: 100vh;
-  transition: 0.3s;
+ 
 }
 #landing-img {
   max-height: 60vh;
@@ -82,7 +81,7 @@ p {
 Nav Stuff
 */
 #nav {
-  background-color: none;
+  background-color: #262333;
   position: fixed;
   z-index: 3;
   height: 6vh;
@@ -114,31 +113,39 @@ Nav Stuff
 
 /* ********************Portfolio stuff below**************************** */
 .portfolio{
-  margin: 1vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
 }
 
 .portfolio-item{
-  max-height: 10%;
+  margin: 1vw;
 }
 
 .portfolio-img{
   max-width: 100%;
 }
+/* ********************Portfolio stuff below**************************** */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 720px) {
+  .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+      margin: 2%;
+    }
+    
+    .portfolio-item {
+    margin: 1%;
+    text-align: center;
+    font-size: xxx-large;
+    }
+    
+    .portfolio-img {
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    
+}
