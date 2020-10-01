@@ -7,7 +7,12 @@ sideNav: 4
 html{
   scroll-behavior: smooth;                          
 }
-  
+
+#about-page{
+  padding-top: 25vh;
+  margin: 5em;
+}
+
 body {
   margin: 0;
   font-family: monospace;
@@ -20,7 +25,7 @@ body {
   background-color: rgb(38 35 51);
   color: blanchedalmond;
   font-size: x-large;
-  min-height: 100vh;
+  min-height: 100vh; 
   margin: 1em;
 }
 
@@ -29,7 +34,7 @@ input {
 }
 
 .body-p{
-  padding-top:6.5vh;
+  padding-top:4vh;
 }
 
   .modal {
@@ -157,5 +162,9 @@ Nav Stuff
       display: flex;
       flex-direction: column;
     }  
+  #about-page {
+    margin:1em;
+    padding-top: 3vh;
+  }
 }
 

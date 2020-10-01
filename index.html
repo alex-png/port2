@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
@@ -58,7 +61,7 @@
     </div>
 
     <div class="page" id="about-page">
-      <p class="body-p">
+      <p >
         Hello, World! I am a creative full-stack engineer passionate about
         developing practical and efficient applications.
       </p>
@@ -105,30 +108,66 @@
           <img src="./public/photoshop.png" class="portfolio-img" />
         </div>
       </div>
-      <p>I am 2x Salesforce certified and proficient in Apex, Visualforce, Aura, SOQL, SOSL, Javascript, React.js, Ruby, Ruby on Rails, CSS, HTML and Adobe Photoshop.</p>
+      <p>
+        I am 2x Salesforce certified and proficient in Apex, Visualforce, Aura,
+        SOQL, SOSL, Javascript, React.js, Ruby, Ruby on Rails, CSS, HTML and
+        Adobe Photoshop.
+      </p>
     </div>
 
     <div class="page" id="portfolio-page">
       <p class="body-p">This is my portfolio page.</p>
     </div>
 
-    <div class="page" id="contact-page" style="overflow: hidden;">
-      <p class="body-p"> Get in touch with me!</p>
-      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/alexrod102797@gmail.com" method="post">
+    <div class="page" id="contact-page" style="overflow: hidden">
+      <p class="body-p">Get in touch with me!</p>
+      <form
+        id="fs-frm"
+        name="simple-contact-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/alexrod102797@gmail.com"
+        method="post"
+      >
         <div class="form">
           <label for="full-name">Full Name</label>
-          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          <input
+            type="text"
+            name="name"
+            id="full-name"
+            placeholder="First and Last"
+            required=""
+          />
           <label for="email-address">Email Address</label>
-          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+          <input
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="email@domain.com"
+            required=""
+          />
           <label for="message">Message</label>
-          <textarea rows="5" name="message" id="message" placeholder="Hello Alex," required=""></textarea>
-          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          <textarea
+            rows="5"
+            name="message"
+            id="message"
+            placeholder="Hello Alex,"
+            required=""
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Contact Form Submission"
+          />
         </div>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" />
       </form>
-    </div>
 
-    <div id="myModal" class="modal"></div>
+      <div style="margin-top: 20%;">
+        <img style="max-width: 30%; margin:.5em;" src="./public/linkedin.svg" onclick="console.log('LINKEDIN')"/>
+        <img style="max-width: 30%; margin:.5em;" src="./public/github.png" onclick="console.log('GIT')"/>
+      </div>
+
   </body>
   <script src="./utility.js" defer></script>
   <script src="./index.js" defer></script>
