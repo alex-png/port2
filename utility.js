@@ -44,7 +44,8 @@ function animatedText(domElement, arr){
         typingAnimated(); //recursive loop, will never end! i wonder what thi will do to performance tho...
     }
         typingAnimated();
-}
+
+    }
 
 function switchOnModal(modal){
     modal.style.display = 'block';

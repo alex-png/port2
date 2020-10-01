@@ -13,7 +13,7 @@ body {
   font-family: monospace;
   background: rgb(38 35 51);
   text-align: center;
-  /* font-family: 'Turret Road'; */
+  font-family: 'Turret Road';
 
 }
 .page {
@@ -23,6 +23,11 @@ body {
   min-height: 100vh;
   margin: 1em;
 }
+
+input {
+  margin-bottom: 1em;
+}
+
 .body-p{
   padding-top:6.5vh;
 }
@@ -147,5 +152,10 @@ Nav Stuff
       margin-top: auto;
       margin-bottom: auto;
     }
-    
+    .form {
+      margin: 1em;
+      display: flex;
+      flex-direction: column;
+    }  
 }
+
