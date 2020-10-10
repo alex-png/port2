@@ -16,17 +16,18 @@ html{
 body {
   margin: 0;
   font-family: monospace;
-  background: rgb(38 35 51);
+  background: rgb(47 43 51);
   text-align: center;
   font-family: 'Turret Road';
 
 }
 .page {
-  background-color: rgb(38 35 51);
+  background: rgb(47 43 51);;
   color: blanchedalmond;
   font-size: x-large;
   min-height: 100vh; 
   margin: 1em;
+  padding-top: 6.5vh;
 }
 
 input {
@@ -34,7 +35,13 @@ input {
 }
 
 .body-p{
-  padding-top:4vh;
+  margin-top: 6.5vh;
+}
+
+.portfolio-p{
+  font-size: large;
+  margin-top: 1em;
+  padding: 0;
 }
 
   .modal {
@@ -77,7 +84,7 @@ input {
   }
   
 #landing-page {
-  background-color: rgb(38 35 51);
+  background-color: rgb(47 43 51);;
   color: blanchedalmond;
   overflow: hidden;
   font-size: xx-large;
@@ -113,13 +120,22 @@ Nav Stuff
   transition: 0.3s;
   z-index: 4;
   overflow: hidden;
+  margin-top: 6vh;
 }
 
 .sideNavBar-section {
+  margin-bottom: 5vh;
   background-color: none;
   min-height: 4vh;
 }
 
+.nav-img {
+  max-width: 90%;
+}
+
+#dynamic-role{
+  color: aquamarine;
+}
 
 /* ********************Portfolio stuff below**************************** */
 .portfolio{
@@ -133,6 +149,7 @@ Nav Stuff
 
 .portfolio-img{
   max-width: 100%;
+  margin: 1em;
 }
 /* ********************Portfolio stuff below**************************** */
 
@@ -140,6 +157,11 @@ Nav Stuff
   .portfolio {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+      margin: 2%;
+    }
+    .portfolio-actual {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       margin: 2%;
     }
     

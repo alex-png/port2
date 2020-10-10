@@ -4,6 +4,7 @@ const roleText = document.getElementById("dynamic-role"); //changing role follow
 let sideNavBarOpen = false;
 let clickedSection = "";
 let modal = document.getElementById("myModal");
+let portfolio = document.getElementById("portfolio-page")
 const roles = ["developer", "freelancer", "problem solver"];
 
 
@@ -16,9 +17,11 @@ burger.addEventListener("click", function () {
 
 sideNavBar.addEventListener("click", function () {
   let target = event.target;
+  if(target.className === 'nav-img'){
+    target = target.parentElement;
+  }
   if (target.className === "sideNavBar-section") {
     if (clickedSection) {
-      console.log('cant be first')
       clickedSection.style.background = "";
       clickedSection = target;
       clickedSection.style.background = "steelblue";
@@ -27,6 +30,7 @@ sideNavBar.addEventListener("click", function () {
       
     } else {
       clickedSection = target;
+      console.log(clickedSection)
       clickedSection.style.background = "steelblue";
       sideNavBarOpen = !sideNavBarOpen; //
       extendOrCollapseWidth(sideNavBarOpen, sideNavBar);
@@ -34,3 +38,17 @@ sideNavBar.addEventListener("click", function () {
     }
   }
 });
+
+portfolio.addEventListener("click", function(){
+  let target = event.target;
+  if(target.id === "findmybeer"){
+    window.open("https://www.youtube.com/watch?v=W17TblhF8UI&ab_channel=IcelandSymphonyOrchestra", '_blank')
+  }else if(target.id === "mobflix"){
+    window.open("https://www.youtube.com/watch?v=W17TblhF8UI&ab_channel=IcelandSymphonyOrchestra", "_blank")
+  }else if(target.id === "nilclassdestroyer"){
+    window.open("https://www.youtube.com/watch?v=W17TblhF8UI&ab_channel=IcelandSymphonyOrchestra", "_blank")
+  }
+
+
+
+})
