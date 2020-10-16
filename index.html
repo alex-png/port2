@@ -1,192 +1,211 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <nav id="nav">
-      <div id="burger" class="hamburger">
-        <img
-          src="./public/circled-menu.png"
-          style="height: -webkit-fill-available"
-        />
-      </div>
-    </nav>
-    <div id="sideNavBar" class="sidenav">
-      <a href="#landing-page">
-        <div id="home" class="sideNavBar-section">
-          <img id="home" src="public/mansion.svg" class="nav-img"/> 
-        </div>
-      </a>
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<link
+				href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap"
+				rel="stylesheet"
+			/>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<title></title>
+			<meta name="description" content="" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<link rel="stylesheet" href="./main.css" />
+		</head>
+		<body>
+			<nav id="nav">
+				<div id="burger" class="hamburger">
+					<img
+						src="./public/circled-menu.png"
+						style="height: -webkit-fill-available"
+					/>
+				</div>
+			</nav>
+			<div id="sideNavBar" class="sidenav">
+				<a href="#landing-page">
+					<div id="home" class="sideNavBar-section">
+						<img id="home" src="public/mansion.svg" class="nav-img"/> 
+					</div>
+				</a>
 
-      <a href="#about-page">
-        <div id="about" class="sideNavBar-section">
-          <img id="about" src="public/creative.svg" class="nav-img"/> 
-        </div>
-      </a>
-      <a href="#portfolio-page">
-        <div id="portfolio" class="sideNavBar-section">
-           <img id="portfolio" src="public/double-screen.svg" class="nav-img"/> 
-        </div>
-      </a>
-      <a href="#contact-page">
-        <div id="contact" class="sideNavBar-section">
-          <img id="contact" src="public/email.svg" class="nav-img"/> 
-        </div>
-      </a>
-    </div>
+				<a href="#about-page">
+					<div id="about" class="sideNavBar-section">
+						<img id="about" src="public/creative.svg" class="nav-img"/> 
+					</div>
+				</a>
+				<a href="#portfolio-page">
+					<div id="portfolio" class="sideNavBar-section">
+						<img id="portfolio" src="public/double-screen.svg" class="nav-img"/> 
+					</div>
+				</a>
+				<a href="#contact-page">
+					<div id="contact" class="sideNavBar-section">
+						<img id="contact" src="public/email.svg" class="nav-img"/> 
+					</div>
+				</a>
+			</div>
 
-    <div id="landing-page">
-      <p style="text-align: center" class="body-p">
-        Hello! My name is <span style="color: #52dbe2;">Alex Rodriguez</span> 
-      </p>
-      <img id="landing-img" src="public\avatar.svg" />
-      <br />
-      <p style="text-align: center">
-        I am a... <span id="dynamic-role"></span> <span class="blinking">|</span>
-      </p>
-    </div>
+			<div id="landing-page">
 
-    <div class="page" id="about-page">
-      <p >
-        Hello, World! I am a creative full-stack engineer passionate about
-        developing practical and efficient applications.
-      </p>
-      <div class="portfolio">
-        <div class="portfolio-item">
-          <img
-            src="./public/SFU_CRT_BDG_Pltfrm_Dev_I_RGB.jpg"
-            class="portfolio-img"
-          />
-        </div>
+				<div id="landing-page-mobile">
+					<p style="text-align: center" class="body-p">
+						Hello! My name is <span style="color: #52dbe2;">Alex Rodriguez</span> 
+					</p>
+					<img id="landing-img" src="public\avatar.svg" />
+					<br />
+					<p style="text-align: center">
+						I am a... <span id="dynamic-role"></span> <span class="blinking">|</span>
+					</p>
+				</div>
 
-        <div class="portfolio-item">
-          <img src="./public/SFU_CRT_BDG_Admin_RGB.jpg" class="portfolio-img" />
-        </div>
+				<div id="landing-page-desktop">
+						<div>
+							<img id="landing-img" src="public\avatar.svg" />
+						</div>
+						<div>
+							<p style="text-align: center">
+								Hello! My name is <span style="color: #52dbe2;">Alex Rodriguez</span> 
+							</p>
+							<br />
+							<p style="text-align: center">
+								I am a... <span id="dynamic-role"></span> <span class="blinking">|</span>
+							</p>
+						</div>
+				</div>
 
-        <div class="portfolio-item">
-          <img src="./public/js-logo.png" class="portfolio-img" />
-        </div>
+			</div>
 
-        <div class="portfolio-item">
-          <img src="./public/react_logo.png" class="portfolio-img" />
-        </div>
+			<div class="page" id="about-page">
+				<p >
+					Hello, World! I am a creative full-stack engineer passionate about
+					developing practical and efficient applications.
+				</p>
+				<div class="portfolio">
+					<div class="portfolio-item">
+						<img
+							src="./public/SFU_CRT_BDG_Pltfrm_Dev_I_RGB.jpg"
+							class="portfolio-img"
+						/>
+					</div>
 
-        <div class="portfolio-item">
-          <img src="./public/ruby.png" class="portfolio-img" />
-        </div>
+					<div class="portfolio-item">
+						<img src="./public/SFU_CRT_BDG_Admin_RGB.jpg" class="portfolio-img" />
+					</div>
 
-        <div class="portfolio-item">
-          <img
-            src="./public/Ruby_On_Rails_Logo.svg.png"
-            class="portfolio-img"
-          />
-        </div>
+					<div class="portfolio-item">
+						<img src="./public/js-logo.png" class="portfolio-img" />
+					</div>
 
-        <div class="portfolio-item">
-          <img src="./public/html5.png" class="portfolio-img" />
-        </div>
+					<div class="portfolio-item">
+						<img src="./public/react_logo.png" class="portfolio-img" />
+					</div>
 
-        <div class="portfolio-item">
-          <img src="./public/css3.png" class="portfolio-img" />
-        </div>
+					<div class="portfolio-item">
+						<img src="./public/ruby.png" class="portfolio-img" />
+					</div>
 
-        <div class="portfolio-item">
-          <img src="./public/photoshop.png" class="portfolio-img" />
-        </div>
-      </div>
-      <p>
-        I am 2x Salesforce certified and proficient in Apex, Visualforce, Aura,
-        SOQL, SOSL, Javascript, React.js, Ruby, Ruby on Rails, CSS, HTML and
-        Adobe Photoshop.
-      </p>
-    </div>
+					<div class="portfolio-item">
+						<img
+							src="./public/Ruby_On_Rails_Logo.svg.png"
+							class="portfolio-img"
+						/>
+					</div>
 
-    <div class="page" id="portfolio-page">
-      <p>Projects</p>
+					<div class="portfolio-item">
+						<img src="./public/html5.png" class="portfolio-img" />
+					</div>
 
-      <div class="portfolio-actual">
+					<div class="portfolio-item">
+						<img src="./public/css3.png" class="portfolio-img" />
+					</div>
 
-        <div class="portfolio-item">
-          <img src="./public/findmybeerimg.png" class="portfolio-img" id="findmybeer"/>
-          <p class="portfolio-p">Discover unique beers tailored to your preference!</p>  
-        </div>
-        <div class="portfolio-item">
-          <img src="./public/mobfliximg.png" class="portfolio-img" id="mobflix">
-          <p class="portfolio-p">A Netflix emulator using clips from Youtube.</p>  
+					<div class="portfolio-item">
+						<img src="./public/photoshop.png" class="portfolio-img" />
+					</div>
+				</div>
+				<p>
+					I am 2x Salesforce certified and proficient in Apex, Visualforce, Aura,
+					SOQL, SOSL, Javascript, React.js, Ruby, Ruby on Rails, CSS, HTML and
+					Adobe Photoshop.
+				</p>
+			</div>
 
-          
-        </div>
+			<div class="page" id="portfolio-page">
+				<p>Projects</p>
 
-        <div class="portfolio-item">
-          <img src="./public/nilclassdestroyerimg.png" class="portfolio-img" id="nilclassdestroyer">
-          <p class="portfolio-p">Destroy students of NilClass in this bubble shooter game!</p>  
+				<div class="portfolio-actual">
 
-        </div>
+					<div class="portfolio-item">
+						<img src="./public/findmybeerimg.png" class="portfolio-img" id="findmybeer"/>
+						<p class="portfolio-p">Discover unique beers tailored to your preference!</p>  
+					</div>
+					<div class="portfolio-item">
+						<img src="./public/mobfliximg.png" class="portfolio-img" id="mobflix">
+						<p class="portfolio-p">A Netflix emulator using clips from Youtube.</p>  
 
-      </div>
+						
+					</div>
 
-    </div>
+					<div class="portfolio-item">
+						<img src="./public/nilclassdestroyerimg.png" class="portfolio-img" id="nilclassdestroyer">
+						<p class="portfolio-p">Destroy students of NilClass in this bubble shooter game!</p>  
 
-    <div class="page" id="contact-page" style="overflow: hidden">
-      <p class="body-p">Get in touch with me!</p>
-      <form
-        id="fs-frm"
-        name="simple-contact-form"
-        accept-charset="utf-8"
-        action="https://formspree.io/f/alexrod102797@gmail.com"
-        method="post"
-      >
-        <div class="form">
-          <label for="full-name">Full Name</label>
-          <input
-            type="text"
-            name="name"
-            id="full-name"
-            placeholder="First and Last"
-            required=""
-          />
-          <label for="email-address">Email Address</label>
-          <input
-            type="email"
-            name="_replyto"
-            id="email-address"
-            placeholder="email@domain.com"
-            required=""
-          />
-          <label for="message">Message</label>
-          <textarea
-            rows="5"
-            name="message"
-            id="message"
-            placeholder="Hello Alex,"
-            required=""
-          ></textarea>
-          <input
-            type="hidden"
-            name="_subject"
-            id="email-subject"
-            value="Contact Form Submission"
-          />
-        </div>
-        <input type="submit" value="Submit" />
-      </form>
+					</div>
 
-      <div style="margin-top: 20%;">
-        <img style="max-width: 30%; margin:.5em;" src="./public/linkedin.svg" onclick="console.log('LINKEDIN')"/>
-        <img style="max-width: 30%; margin:.5em;" src="./public/github.png" onclick="console.log('GIT')"/>
-      </div>
+				</div>
 
-  </body>
-  <script src="./utility.js" defer></script>
-  <script src="./index.js" defer></script>
-</html>
+			</div>
+
+			<div class="page" id="contact-page" style="overflow: hidden">
+				<p class="body-p">Get in touch with me!</p>
+				<form
+					id="fs-frm"
+					name="simple-contact-form"
+					accept-charset="utf-8"
+					action="https://formspree.io/f/alexrod102797@gmail.com"
+					method="post"
+				>
+					<div class="form">
+						<label for="full-name">Full Name</label>
+						<input
+							type="text"
+							name="name"
+							id="full-name"
+							placeholder="First and Last"
+							required=""
+						/>
+						<label for="email-address">Email Address</label>
+						<input
+							type="email"
+							name="_replyto"
+							id="email-address"
+							placeholder="email@domain.com"
+							required=""
+						/>
+						<label for="message">Message</label>
+						<textarea
+							rows="5"
+							name="message"
+							id="message"
+							placeholder="Hello Alex,"
+							required=""
+						></textarea>
+						<input
+							type="hidden"
+							name="_subject"
+							id="email-subject"
+							value="Contact Form Submission"
+						/>
+					</div>
+					<input type="submit" value="Submit" />
+				</form>
+
+				<div style="margin-top: 20%;">
+					<img style="max-width: 30%; margin:.5em;" src="./public/linkedin.svg" onclick="console.log('LINKEDIN')"/>
+					<img style="max-width: 30%; margin:.5em;" src="./public/github.svg" onclick="console.log('GIT')"/>
+				</div>
+
+		</body>
+		<script src="./utility.js" defer></script>
+		<script src="./index.js" defer></script>
+	</html>
