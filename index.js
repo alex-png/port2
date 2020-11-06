@@ -1,14 +1,17 @@
 const burger = document.getElementById("burger"); //menu icon on navbar
 const sideNavBar = document.getElementById("sideNavBar");
-const roleText = document.getElementById("dynamic-role"); //changing role following "i am a..."
+const roleText = document.getElementById("mobile-dynamic-role"); //changing role following "i am a..."
+const roleTextDeskTop = document.getElementById("desktop-dynamic-role"); //changing role following "i am a..."
+
 let sideNavBarOpen = false;
 let clickedSection = "";
 let modal = document.getElementById("myModal");
 let portfolio = document.getElementById("portfolio-page")
 const roles = ["developer", "freelancer", "problem solver"];
 
-
 animatedText(roleText, roles);
+//animatedText(roleTextDeskTop, roles);
+
 
 burger.addEventListener("click", function () {
   sideNavBarOpen = !sideNavBarOpen; //
@@ -48,7 +51,4 @@ portfolio.addEventListener("click", function(){
   }else if(target.id === "nilclassdestroyer"){
     window.open("https://www.youtube.com/watch?v=W17TblhF8UI&ab_channel=IcelandSymphonyOrchestra", "_blank")
   }
-
-
-
-})
+});
