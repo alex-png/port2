@@ -12,7 +12,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<link rel="stylesheet" href="./main.css" />
 		</head>
-		<body>
+		<body onload="runMobileOrDesktop()" >
 			<nav id="nav">
 				<div id="burger" class="hamburger">
 					<img
@@ -47,7 +47,7 @@
 
 			<div id="landing-page">
 
-				<div id="landing-page-mobile">
+				<div id="landing-page-mobile" onload="runMobileOrDesktop()">
 					<p style="text-align: center" class="body-p">
 						Hello! My name is <span style="color: #52dbe2;">Alex Rodriguez</span> 
 					</p>
@@ -58,16 +58,16 @@
 					</p>
 				</div>
 
-				<div id="landing-page-desktop">
+				<div id="landing-page-desktop" onload="runMobileOrDesktop()">
 						
 						<div>
+							<br/>
 							<p style="text-align: center">
-								Hello! My name is 
+								Hello! My name is <span style="color: #52dbe2; font-size:xx-large">Alex Rodriguez</span>
 							</p>
-							<span style="color: #52dbe2; font-size:xx-large">Alex Rodriguez</span>
-							<br />
-							<p style="text-align: left">
-								I am a... <span id="desktop-dynamic-role"></span> <span class="blinking">|</span>
+									
+							<p style="text-align: left; position: absolute;">
+								I am a <span id="desktop-dynamic-role"></span> <span class="blinking">|</span>
 							</p>
 						</div>
 						<div>
@@ -201,7 +201,7 @@
 					</div>
 					<input type="submit" value="Submit" />
 				</form>
-
+			</div>
 				<div style="margin-top: 20%;">
 					<img style="max-width: 30%; margin:.5em;" src="./public/linkedin.svg" onclick="console.log('LINKEDIN')"/>
 					<img style="max-width: 30%; margin:.5em;" src="./public/github.svg" onclick="console.log('GIT')"/>

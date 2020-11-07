@@ -6,23 +6,18 @@ function extendOrCollapseWidth(isToggled, sideNavBar){
         sideNavBar.style.width = '0';        
     }
 }
+
+let runningTimer;
 function timer(ms){
-    return new Promise(res => setTimeout(res, ms));
+    return new Promise(res => (runningTimer = setTimeout(res, ms)));
 }
 
 function animatedText(domElement, arr){
     innerText = '';
+
     let index = 0;
+    
     let currentElement = arr[index];
-    async function backspaceAnimated(){
-        for(let i = innerText.length; i > 0; i--){
-            let textArr = innerText.split('');
-            textArr.pop();
-            innerText = textArr.join('');
-            domElement.innerText = innerText;
-            await timer(105); //backspace key stroke
-        }
-    }
 
     async function typingAnimated(){
         for(let i = 0; i < currentElement.length; i++){
@@ -43,7 +38,21 @@ function animatedText(domElement, arr){
         await timer(msPerChar); //below will never happen until the word has been typed out/function is resolved.
         typingAnimated(); //recursive loop, will never end! i wonder what thi will do to performance tho...
     }
-        typingAnimated();
+
+        
+    async function backspaceAnimated(){
+        for(let i = innerText.length; i > 0; i--){
+            let textArr = innerText.split('');
+            textArr.pop();
+            innerText = textArr.join('');
+            domElement.innerText = innerText;
+            await timer(105); //backspace key stroke
+        }
+    }
+
+
+
+    typingAnimated();
 
     }
 
