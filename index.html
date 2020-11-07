@@ -53,7 +53,7 @@
 					</p>
 					<img id="landing-img" src="public\avatar.svg" />
 					<br />
-					<p style="text-align: center">
+					<p style="text-align: center; color:aquamarine;">
 						I am a... <span id="mobile-dynamic-role"></span> <span class="blinking">|</span>
 					</p>
 				</div>
@@ -66,17 +66,66 @@
 								Hello! My name is <span style="color: #52dbe2; font-size:xx-large">Alex Rodriguez</span>
 							</p>
 									
-							<p style="text-align: left; position: absolute;">
+							<p style="text-align: left; position: absolute;color:aquamarine;">
 								I am a <span id="desktop-dynamic-role"></span> <span class="blinking">|</span>
 							</p>
 						</div>
+						
 						<div>
 							<img id="landing-img-desktop" src="public\avatar.svg" />
 						</div>
-				</div>
+						
+		
+				
 
 			</div>
 
+	<!--
+		<div>
+				<p class="body-p">Get in touch with me!</p>
+				<form
+					id="fs-frm"
+					name="simple-contact-form"
+					accept-charset="utf-8"
+					action="https://formspree.io/f/alexrod102797@gmail.com"
+					method="post"
+				>
+					<div class="form">
+						<label for="full-name">Full Name</label>
+						<input
+							type="text"
+							name="name"
+							id="full-name"
+							placeholder="First and Last"
+							required=""
+						/>
+						<label for="email-address">Email Address</label>
+						<input
+							type="email"
+							name="_replyto"
+							id="email-address"
+							placeholder="email@domain.com"
+							required=""
+						/>
+						<label for="message">Message</label>
+						<textarea
+							rows="5"
+							name="message"
+							id="message"
+							placeholder="Hello Alex,"
+							required=""
+						></textarea>
+						<input
+							type="hidden"
+							name="_subject"
+							id="email-subject"
+							value="Contact Form Submission"
+						/>
+					</div>
+					<input type="submit" value="Submit" />
+				</form>
+			</div>
+				
 			<div class="page" id="about-page">
 				<p >
 					Hello, World! I am a creative full-stack engineer passionate about
@@ -157,55 +206,13 @@
 				</div>
 
 			</div>
-
-			<div class="page" id="contact-page" style="overflow: hidden">
-				<p class="body-p">Get in touch with me!</p>
-				<form
-					id="fs-frm"
-					name="simple-contact-form"
-					accept-charset="utf-8"
-					action="https://formspree.io/f/alexrod102797@gmail.com"
-					method="post"
-				>
-					<div class="form">
-						<label for="full-name">Full Name</label>
-						<input
-							type="text"
-							name="name"
-							id="full-name"
-							placeholder="First and Last"
-							required=""
-						/>
-						<label for="email-address">Email Address</label>
-						<input
-							type="email"
-							name="_replyto"
-							id="email-address"
-							placeholder="email@domain.com"
-							required=""
-						/>
-						<label for="message">Message</label>
-						<textarea
-							rows="5"
-							name="message"
-							id="message"
-							placeholder="Hello Alex,"
-							required=""
-						></textarea>
-						<input
-							type="hidden"
-							name="_subject"
-							id="email-subject"
-							value="Contact Form Submission"
-						/>
-					</div>
-					<input type="submit" value="Submit" />
-				</form>
-			</div>
-				<div style="margin-top: 20%;">
+			<div style="margin-top: 20%;">
 					<img style="max-width: 30%; margin:.5em;" src="./public/linkedin.svg" onclick="console.log('LINKEDIN')"/>
 					<img style="max-width: 30%; margin:.5em;" src="./public/github.svg" onclick="console.log('GIT')"/>
 				</div>
+				</div>
+			
+	-->	
 
 		</body>
 		<script src="./utility.js" defer></script>
